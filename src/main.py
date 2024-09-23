@@ -109,4 +109,4 @@ handler.setFormatter(logging.Formatter(
     '%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
-bot.run(discord_secrets['discord-token'])
+bot.run(os.environ['DISCORD_TOKEN'])
